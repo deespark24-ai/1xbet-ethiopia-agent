@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xBet Ethiopia Agent - Fast Automatic Deposit & Withdrawal</title>
+    <meta name="description" content="1xBet Ethiopia Official Agent. Deposit and Withdraw funds using CBE, Telebirr, Abyssinia, and Wegagen Bank instantly in Ethiopia.">
+    <meta name="keywords" content="1xBet Ethiopia, 1xBet Fast Deposit Ethiopia, 1xBet Agent Ethiopia, 1xBet CBE, 1xBet Telebirr">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0d1e2d;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        .container {
+            background-color: #182d42;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            border: 1px solid #2a4765;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            color: #3b99fc;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #a0b2c6;
+            font-size: 13px;
+        }
+        .account-name {
+            background-color: #102131;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border: 1px solid #3b99fc;
+        }
+        .notice-box {
+            background-color: #3d1414;
+            border-left: 4px solid #ff4d4d;
+            padding: 10px;
+            font-size: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            line-height: 1.4;
+            color: #ffcccc;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 13px;
+            color: #d1e0ef;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #2a4765;
+            background-color: #0d1e2d;
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+        }
+        .payment-info {
+            background: #112538;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: 1px dashed #28a745;
+        }
+        .payment-info p {
+            font-size: 12px;
+            color: #88a3c0;
+            margin-bottom: 4px;
+        }
+        .account-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+            letter-spacing: 1px;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 11px;
+            color: #617b99;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>1xBet Ethiopia Official Agent</h1>
+        <p>Fast Automatic Deposit & Withdrawal System</p>
+    </div>
+
+    <!-- የባለቤቱ ስም -->
+    <div class="account-name">
+        👤 Account Holder: DANIEL GEBRESLASSIE KASSA
+    </div>
+
+    <div class="notice-box">
+        ⚠️ <strong>እጅግ በጣም አስፈላጊ ማሳሰቢያ፦</strong> ገንዘብ ሲያስተላልፉ በ Reason (የማስተላለፊያ ምክንያት) ቦታ ላይ ምንም አይነት ጽሁፍ ባዶ ይተውት! እንደ betting, sports, 1xBet ወይም ቆማሪ ያሉ ቃላትን በጭራሽ አይጻፉ!
+    </div>
+
+    <form id="depositForm">
+        <div class="form-group">
+            <label for="userId">የ 1xBet Account ID ያስገቡ፦</label>
+            <input type="number" id="userId" placeholder="ምሳሌ: 12345678" required>
+        </div>
+
+        <div class="form-group">
+            <label for="paymentMethod">የክፍያ አማራጭ ይምረጡ፦</label>
+            <select id="paymentMethod" required>
+                <option value="CBE">የኢትዮጵያ ንግድ ባንክ (CBE)</option>
+                <option value="Telebirr">ቴሌብር (Telebirr)</option>
+                <option value="Abyssinia">የአቢሲንያ ባንክ (Abyssinia)</option>
+                <option value="Wegagen">ወጋገን ባንክ (Wegagen)</option>
+            </select>
+        </div>
+
+        <div class="payment-info">
+            <p id="bankLabel">ገንዘብ የሚያስተላልፉበት የንግድ ባንክ (CBE) ቁጥር፦</p>
+            <div class="account-number" id="agentAccount">1000804043687</div>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">የተላከው የብር መጠን (ETB)፦</label>
+            <input type="number" id="amount" min="25" placeholder="መጠኑን ያስገቡ" required>
+        </div>
+
+        <div class="form-group">
+            <label for="txnId">የባንክ ትራንዛክሽን ቁጥር (Transaction ID / Ref)፦</label>
+            <input type="text" id="txnId" placeholder="ምሳሌ: FT24... ወይም የቴሌብር ትራንዛክሽን ቁጥር" required>
+        </div>
+
+        <button type="submit" class="btn-submit">ዲፖዚት አረጋግጥ (CONFIRM DEPOSIT)</button>
+    </form>
+
+    <div class="footer">
+        © 1xBet Fast Deposit Ethiopia - Agent ID: 1509935
+    </div>
+</div>
+
+<script>
+    // ከስክሪንሾቱ የተወሰዱት የባንክና ቴሌብር ቁጥሮችህ
+    const accounts = {
+        CBE: { number: "1000804043687", label: "ገንዘብ የሚያስተላልፉበት የንግድ ባንክ (CBE) ቁጥር፦" },
+        Telebirr: { number: "+251989774293", label: "ገንዘብ የሚያስተላልፉበት የቴሌብር (Telebirr) ቁጥር፦" },
+        Abyssinia: { number: "37384437", label: "ገንዘብ የሚያስተላልፉበት የአቢሲንያ ባንክ ቁጥር፦" },
+        Wegagen: { number: "0095645330101", label: "ገንዘብ የሚያስተላልፉበት የወጋገን ባንክ ቁጥር፦" }
+    };
+
+    const paymentSelect = document.getElementById('paymentMethod');
+    const accountDisplay = document.getElementById('agentAccount');
+    const bankLabel = document.getElementById('bankLabel');
+
+    paymentSelect.addEventListener('change', function() {
+        const selected = accounts[this.value];
+        accountDisplay.innerText = selected.number;
+        bankLabel.innerText = selected.label;
+    });
+
+    document.getElementById('depositForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('ጥያቄዎ ተቀብለናል! በ 1-3 ደቂቃ ውስጥ ገቢ ይደረግልዎታል::');
+        // እዚህ ጋር ከ Railway / MobCash API ጋር የሚገናኘው script ይገባል
+    });
+</script>
+
+</body>
+</html>
