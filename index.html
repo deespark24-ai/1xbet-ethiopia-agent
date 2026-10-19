@@ -3,210 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1xBet Ethiopia Agent - Fast Automatic Deposit & Withdrawal</title>
-    <meta name="description" content="1xBet Ethiopia Official Agent. Deposit and Withdraw funds using CBE, Telebirr, Abyssinia, and Wegagen Bank instantly in Ethiopia.">
-    <meta name="keywords" content="1xBet Ethiopia, 1xBet Fast Deposit Ethiopia, 1xBet Agent Ethiopia, 1xBet CBE, 1xBet Telebirr">
+    <title>1xBet Ethiopia Agent | ህጋዊ የ 1xBet ኤጀንት አገልግሎት</title>
     <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #0d47a1;
+            --accent: #ff9800;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #ffffff;
+            --text-muted: #94a3b8;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
-            background-color: #0d1e2d;
-            color: #ffffff;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 15px;
         }
+
         .container {
-            background-color: #182d42;
+            max-width: 600px;
             width: 100%;
-            max-width: 500px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            border-radius: 16px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        header p {
+            color: #e2e8f0;
+            font-size: 15px;
+        }
+
+        .badge {
+            background-color: var(--accent);
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-            border: 1px solid #2a4765;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .header h1 {
-            color: #3b99fc;
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-        .header p {
-            color: #a0b2c6;
-            font-size: 13px;
-        }
-        .account-name {
-            background-color: #102131;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: bold;
-            color: #ffc107;
-            margin-bottom: 15px;
-            font-size: 14px;
-            border: 1px solid #3b99fc;
-        }
-        .notice-box {
-            background-color: #3d1414;
-            border-left: 4px solid #ff4d4d;
-            padding: 10px;
-            font-size: 12px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            line-height: 1.4;
-            color: #ffcccc;
-        }
-        .form-group {
-            margin-bottom: 12px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 13px;
-            color: #d1e0ef;
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #2a4765;
-            background-color: #0d1e2d;
-            color: #fff;
-            font-size: 14px;
-            outline: none;
-        }
-        .payment-info {
-            background: #112538;
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            text-align: center;
-            border: 1px dashed #28a745;
-        }
-        .payment-info p {
-            font-size: 12px;
-            color: #88a3c0;
-            margin-bottom: 4px;
-        }
-        .account-number {
+
+        .card h2 {
             font-size: 18px;
-            font-weight: bold;
-            color: #28a745;
-            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .btn-submit {
+
+        .btn {
+            display: block;
             width: 100%;
-            background-color: #28a745;
+            padding: 16px;
+            margin: 12px 0;
+            background: linear-gradient(90deg, #2563eb, #1d4ed8);
             color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .btn-submit:hover {
-            background-color: #218838;
-        }
-        .footer {
             text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-deposit {
+            background: linear-gradient(90deg, #16a34a, #15803d);
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+        }
+
+        .btn-withdraw {
+            background: linear-gradient(90deg, #dc2626, #b91c1c);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
             margin-top: 15px;
-            font-size: 11px;
-            color: #617b99;
+        }
+
+        .service-item {
+            background: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="header">
-        <h1>1xBet Ethiopia Official Agent</h1>
-        <p>Fast Automatic Deposit & Withdrawal System</p>
+    <header>
+        <span class="badge">Official 1xBet Agent</span>
+        <h1>1xBet ኢትዮጵያ ኤጀንት</h1>
+        <p>ፈጣንና አስተማማኝ የ 1xBet ሂሳብ መሙያና ማውጫ አገልግሎት</p>
+    </header>
+
+    <div class="card">
+        <h2>🚀 ፈጣን አገልግሎት ለማግኘት</h2>
+        <p style="font-size: 14px; color: #cbd5e1; margin-bottom: 15px;">
+            በቴሌግራም ቦታችን በኩል በቀላሉ ሂሳብዎን መሙላት (Deposit) ወይም ማውጣት (Withdraw) ይችላሉ።
+        </p>
+        
+        <a href="https://t.me/Gkassa1xBet_bot" class="btn btn-deposit">📥 ገንዘብ ለመሙላት (Deposit)</a>
+        <a href="https://t.me/Gkassa1xBet_bot" class="btn btn-withdraw">📤 ገንዘብ ለማውጣት (Withdraw)</a>
+        <a href="https://t.me/Gkassa1xBet_bot" class="btn">🤖 ወደ ቴሌግራም ቦት ሂድ</a>
     </div>
 
-    <!-- የባለቤቱ ስም -->
-    <div class="account-name">
-        👤 Account Holder: DANIEL GEBRESLASSIE KASSA
+    <div class="card">
+        <h2>💳 የምንቀበላቸው የክፍያ አማራጮች</h2>
+        <div class="services">
+            <div class="service-item">📲 ቴሌብር (Telebirr)</div>
+            <div class="service-item">🏦 ንግድ ባንክ (CBE)</div>
+            <div class="service-item">💳 አቢሲንያ ባንክ</div>
+            <div class="service-item">⚡ CBE Birr / Awash</div>
+        </div>
     </div>
 
-    <div class="notice-box">
-        ⚠️ <strong>እጅግ በጣም አስፈላጊ ማሳሰቢያ፦</strong> ገንዘብ ሲያስተላልፉ በ Reason (የማስተላለፊያ ምክንያት) ቦታ ላይ ምንም አይነት ጽሁፍ ባዶ ይተውት! እንደ betting, sports, 1xBet ወይም ቆማሪ ያሉ ቃላትን በጭራሽ አይጻፉ!
+    <div class="card">
+        <h2>📞 እኛን ለማነጋገር</h2>
+        <p style="font-size: 14px; color: #cbd5e1; margin-bottom: 10px;">
+            ማንኛውም ጥያቄ ወይም እገዛ ካስፈለግዎት ቦታችንን ወይም ኤጀንታችንን ማነጋገር ይችላሉ።
+        </p>
+        <a href="https://t.me/Gkassa1xBet_bot" class="btn" style="background: #334155;">💬 ኤጀንቱን አነጋግር</a>
     </div>
 
-    <form id="depositForm">
-        <div class="form-group">
-            <label for="userId">የ 1xBet Account ID ያስገቡ፦</label>
-            <input type="number" id="userId" placeholder="ምሳሌ: 12345678" required>
-        </div>
-
-        <div class="form-group">
-            <label for="paymentMethod">የክፍያ አማራጭ ይምረጡ፦</label>
-            <select id="paymentMethod" required>
-                <option value="CBE">የኢትዮጵያ ንግድ ባንክ (CBE)</option>
-                <option value="Telebirr">ቴሌብር (Telebirr)</option>
-                <option value="Abyssinia">የአቢሲንያ ባንክ (Abyssinia)</option>
-                <option value="Wegagen">ወጋገን ባንክ (Wegagen)</option>
-            </select>
-        </div>
-
-        <div class="payment-info">
-            <p id="bankLabel">ገንዘብ የሚያስተላልፉበት የንግድ ባንክ (CBE) ቁጥር፦</p>
-            <div class="account-number" id="agentAccount">1000804043687</div>
-        </div>
-
-        <div class="form-group">
-            <label for="amount">የተላከው የብር መጠን (ETB)፦</label>
-            <input type="number" id="amount" min="25" placeholder="መጠኑን ያስገቡ" required>
-        </div>
-
-        <div class="form-group">
-            <label for="txnId">የባንክ ትራንዛክሽን ቁጥር (Transaction ID / Ref)፦</label>
-            <input type="text" id="txnId" placeholder="ምሳሌ: FT24... ወይም የቴሌብር ትራንዛክሽን ቁጥር" required>
-        </div>
-
-        <button type="submit" class="btn-submit">ዲፖዚት አረጋግጥ (CONFIRM DEPOSIT)</button>
-    </form>
-
-    <div class="footer">
-        © 1xBet Fast Deposit Ethiopia - Agent ID: 1509935
-    </div>
+    <footer>
+        &copy; 2026 1xBet Ethiopia Agent Service. All rights reserved.
+    </footer>
 </div>
-
-<script>
-    // ከስክሪንሾቱ የተወሰዱት የባንክና ቴሌብር ቁጥሮችህ
-    const accounts = {
-        CBE: { number: "1000804043687", label: "ገንዘብ የሚያስተላልፉበት የንግድ ባንክ (CBE) ቁጥር፦" },
-        Telebirr: { number: "+251989774293", label: "ገንዘብ የሚያስተላልፉበት የቴሌብር (Telebirr) ቁጥር፦" },
-        Abyssinia: { number: "37384437", label: "ገንዘብ የሚያስተላልፉበት የአቢሲንያ ባንክ ቁጥር፦" },
-        Wegagen: { number: "0095645330101", label: "ገንዘብ የሚያስተላልፉበት የወጋገን ባንክ ቁጥር፦" }
-    };
-
-    const paymentSelect = document.getElementById('paymentMethod');
-    const accountDisplay = document.getElementById('agentAccount');
-    const bankLabel = document.getElementById('bankLabel');
-
-    paymentSelect.addEventListener('change', function() {
-        const selected = accounts[this.value];
-        accountDisplay.innerText = selected.number;
-        bankLabel.innerText = selected.label;
-    });
-
-    document.getElementById('depositForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('ጥያቄዎ ተቀብለናል! በ 1-3 ደቂቃ ውስጥ ገቢ ይደረግልዎታል::');
-        // እዚህ ጋር ከ Railway / MobCash API ጋር የሚገናኘው script ይገባል
-    });
-</script>
 
 </body>
 </html>
